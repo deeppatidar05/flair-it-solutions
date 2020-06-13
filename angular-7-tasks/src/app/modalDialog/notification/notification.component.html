@@ -1,0 +1,11 @@
+<div class="error"> Error</div>
+
+<div mat-dialog-content>
+  <p>{{data.message}}</p>
+
+</div>
+<div mat-dialog-actions>
+  <div fxlayout="column"   style="flex-direction: column;  display: flex;   place-content: flex-end flex-start; align-items: flex-end;">
+    <button mat-button (click)="close()">Close</button>
+  </div>
+</div>

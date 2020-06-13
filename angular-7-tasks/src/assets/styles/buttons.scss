@@ -1,0 +1,19 @@
+.btn-bg-none{
+    background: none !important;
+}
+
+
+/*for button focus*/
+/*for button focus*/
+button:focus{
+    outline:none;
+    background: none;
+}
+.mat-button-focus-overlay{
+
+   display: none !important;
+    
+}
+.mat-button.mat-accent .mat-button-focus-overlay, .mat-icon-button.mat-accent .mat-button-focus-overlay, .mat-stroked-button.mat-accent .mat-button-focus-overlay {
+    background-color: transparent;
+}

@@ -1,0 +1,58 @@
+mat-card-header {
+    background-color: #259374;
+    color: #fff;
+    box-shadow: 0 2px 3px #01565656;
+
+}
+
+.container{
+     flex: 1 1 100%; box-sizing: border-box; margin-left: 35%; max-width: 30%;
+}
+
+
+@media (max-width: 768px) { 
+    .container{
+        flex: 1 1 100%; box-sizing: border-box; margin-left: 0%; max-width: 100%;
+   }
+  }
+.centercolumns{
+    flex: 1 1 100%;
+     box-sizing: border-box; 
+     margin-left: 20%; 
+     flex-direction: column; 
+     display: flex;
+      max-width: 60%;
+}
+
+.width100{
+    width: 100%;
+}
+.colwidth40{
+    flex: 1 1 100%; box-sizing: border-box; margin-left: 5%; flex-direction: column; display: flex; max-width: 40%;
+}
+.max40width{
+    flex: 1 1 100%; box-sizing: border-box; margin-left: 5% !important; max-width: 40%;
+}
+ 
+ mat-card {margin:100px 0;padding:0}
+   mat-card-header {
+       padding:24px;padding-bottom:24px!important;
+       place-content: stretch center; align-items: stretch;
+        flex-direction: row; box-sizing: border-box; display: flex;
+}
+      mat-card-actions {
+          margin:0;
+          padding-bottom:48px!important;
+          flex-direction: column; 
+          box-sizing: border-box; 
+          display: flex; 
+          max-width: 100%;
+           place-content: center; 
+           align-items: center;
+    
+    }
+      mat-card-header  p{font-size:24px;font-weight:700}
+      mat-form-field {margin:10px 0}
+      .mat-card-header-text{
+          margin:0px !important;
+      }

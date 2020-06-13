@@ -1,0 +1,45 @@
+
+
+.nav{
+  .nav-item{
+    .nav-link{
+      color: #333;
+    }
+  }
+}
+
+.nav-block{
+  width: 100%;
+  align-items: center;
+}
+
+.search-input{
+  border: none;
+}
+
+.nav-link{
+  .fa-user{
+    // height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    background: gold;
+    color: black;
+  }
+}
+
+@media (max-width: 576px) { 
+  .p4f-nav{
+    display: flow-root;
+      .li a{
+          float: right;
+      }
+  }
+}
+
+.marginlt10{
+  margin-left: 10px;
+}
+
+.mat-raised-button {
+  background-color: #2979ff !important;
+}

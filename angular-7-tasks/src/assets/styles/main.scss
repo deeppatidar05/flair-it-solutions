@@ -1,0 +1,39 @@
+.home-btn-light {
+  background: white !important;
+  padding: 10px 15px;
+  border: 2px solid #000 !important;
+  border-radius: 0px !important;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.home-btn-transparent {
+  background: transparent !important;
+  padding: 10px 15px;
+  border: 2px solid #fff !important;
+  color: #fff !important;
+  border-radius: 0px !important;
+}
+
+.home-text-primary {
+  color: #2aa287;
+  font-weight: bold;
+}
+
+
+.prepBtn-warn{
+  background: #D6463E !important;
+  color: #fff !important;
+  border-radius: 0px !important;
+  width: 150px;
+}
+
+.banner-splash{
+  height: 100px;
+}
+
+.login-splash, .about-us-splash{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}

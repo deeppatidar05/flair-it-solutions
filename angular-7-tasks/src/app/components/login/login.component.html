@@ -1,0 +1,48 @@
+<div fxlayout="row">
+  <div fxflex="80" fxflex.gt-md="30" fxflexoffset="10" fxflexoffset.gt-md="35" class="container">
+    <div fxlayout="column">
+      <form (ngSubmit)="login()" #loginStudentForm="ngForm">
+        <mat-card class="mat-card">
+          <mat-card-header class="mat-card-header" fxlayoutalign="center none">
+            <div class="mat-card-header-text"></div>
+            <p>User - Login</p>
+          </mat-card-header>
+          <mat-card-content class="mat-card-content">
+            <div fxlayout="column">
+              <div fxlayout="row">
+                <div fxflex="100" fxflex.gt-md="60" fxflexoffset="0" fxflexoffset.gt-md="20" fxlayout="column"
+                  class="centercolumns">
+                  <mat-form-field>
+                    <input matInput placeholder="Email" name="email" [email]="user_email !== ''" [(ngModel)]="user_email" #email="ngModel"
+                      autocomplete="off"   required>
+                      <mat-error *ngIf="email.errors?.required && email.touched">
+                          Email is required
+                         </mat-error>
+                         <mat-error *ngIf="email.errors?.email && email.touched">
+                            Email is not valid
+                           </mat-error>
+    
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input matInput type="password" placeholder="Password" name="user_password"
+                      [(ngModel)]="user_password" autocomplete="off" #password="ngModel" required>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+          <mat-card-actions class="mat-card-actions" fxlayout="column" fxlayoutalign="center center">
+            <div class="row width100 text-center" fxlayout="row" fxlayout.lt-sm="column">
+              <button color="accent" fxflex="40" type="submit"
+                [disabled]="!loginStudentForm.form.valid" mat-raised-button class="max40width">
+                Login
+              </button>
+            </div>
+          </mat-card-actions>
+        </mat-card>
+      </form>
+
+    </div>
+  </div>
+
+</div>
